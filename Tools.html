@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<title>Science | Events</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/dropdown.css" type="text/css" media="all">
+
+
+
+
+
+</head>
+<body id="page4">
+<!-- START PAGE SOURCE -->
+<div class="body1"></div>
+<div class="body2">
+  <div class="main">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul id="menu">
+            <li ><a href="index.html">Home</a></li>
+            <li>
+              
+
+              
+              <div class="dropdown">
+                <a href="">Researches</a>
+                <span></span>
+                <div class="dropdown-content">
+
+
+                <a href="pdf/gnssprocessing.pdf" target=”_blank”>GNSSS Processing</a>
+            
+
+              
+                </div>
+              </div>
+            
+            </li>
+
+            <!-- <li><a href="services.html">Services</a></li> -->
+
+            <li >
+              
+
+              
+              <div class="dropdown">
+                <a href="">Tools</a>
+                <span></span>
+                <div class="dropdown-content">
+
+
+                  <a href="Tools.html">Height transformation</a>
+                <a href="Madamap">Madagasikara Public Data and GIS Tools</a>
+                <a>Kriggin Interpolation</a>
+
+              
+                </div>
+              </div>
+            
+            </li>
+            
+            
+              
+
+
+          <!--   <li id="menu_active"><a href="Tools.html">Tools</a></li>  -->
+
+
+            <li class="bg_none"><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1><a href="#" id="logo">science</a></h1>
+      </div>
+      <div class="wrapper">
+        <article class="col1 pad_left2">
+          <div class="text1">Madagasikara geosciences <span>Geophysics, Geology, Engineering  </span></div>
+          <p> We share knowledge and tools to push Madagasikara's subsurface understanding.   <a href="#" class="link1">Read More</a> </p>
+        </article>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="main1" >
+
+<div class="body3" >
+
+<section id="content">
+
+<ul class="col2 list3 pad_left1 ">
+  
+  <h4>
+    <label>Longitude:</label>
+    <input  type="text" id="idxlab" value="0"><br><br>
+
+    <label>Latitude:</label>
+    <input type="number" id="idylab" value="0"><br><br>
+
+    <label> H ellipsoid :</label>
+    <input type="number" id="idzlab" value="0"><br><br><br>
+
+  <button   onclick="myFunction()"  class="button button1" >Calculate</button>
+
+  <li><a href="https://www.usna.edu/Users/oceano/pguth/md_help/html/egm96.htm" target=”_blank” >EGM08 and EGM96 geoid data </a></li><br><br>
+
+  <label > SHOW DATA ON MAP: </label><br>
+
+  <li><a href="gridding.html">GEOID CORRECTION MAP </a></li>
+  <li><a href="griddingEGM08.html">GEOID EGM2008 MAP </a></li><br>
+  
+
+  <p class="loader" id="load"></p>
+  </h4>
+
+</ul>
+
+<script>
+  document.getElementById("load").style.display = "none";
+</script>
+
+  <ul class="col2 list3 pad_left1">
+
+      <h4> 
+        <a id="err"></a><br>
+        Geoid EGM2008:  <a id="g08"></a><br>
+        Geoid correction:  <a id="cor"></a><br>
+        Geoid EGM2008 corrig&eacute;:  <a id="g08cor"></a><br>
+        Altitude par rapport &agrave; la mer:  <a id="orth"></a>
+      </h4>
+</ul>
+
+
+
+
+ 
+
+  <ul class="col2 list3 pad_left3 ">
+    <a href="https://docplayer.fr/25115603-Tout-sur-la-projection-laborde-et-l-utilisation-du-gps-a-madagascar-andrianarison-misan-ny-farany-nirina.html" target=”_blank” >Geoid data correction: you can find data from this paper</a>
+    <a href="gridding.html" target=”_blank” >See data on a map</a>
+    <h5> <img src="images/cor.jpg " 
+      width="400" 
+      height="550"  />
+    </h5>
+  </ul>
+
+
+  <ul class="col2 list3 pad_left3">
+
+      <a> Because why do it in python when I can do it in Javascripts?</a>
+      <h5>
+        <svg id="canvas2" width=500 height=500 viewBox="0 0 25 25"></svg>
+       
+     
+      </h5>
+      
+   
+  </ul>
+
+</h4>
+
+
+</section>
+
+      
+
+  </section>
+  
+</div>
+</div>
+
+<div class="body4">
+  <div class="main">
+    <div id="footer_menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Researches</a></li>
+          <!-- <li><a href="#">Services</a></li>-->
+          <li><a href="#">Tools</a></li>
+          <li class="bg_none"><a href="#">Contacts</a></li>
+
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<footer >
+  <div class="footerlink">
+    <p class="lf">Copyright &copy; 2022 <a href="#">Madagasikara Geosciences</a> - All Rights Reserved</p>
+    <p class="rf">Design by  <!--<a href="http://www.templatemonster.com/">-->Safidy Ratolonandrasana</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+
+</body>
+
+<script src="js/GeoidH.js"></script>
+
+
+<script src='https://cdn.plot.ly/plotly-2.14.0.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.1.0/proj4.js'></script>
+
+</html>
