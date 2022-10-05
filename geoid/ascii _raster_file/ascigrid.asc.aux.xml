@@ -1,0 +1,18 @@
+<PAMDataset>
+  <SRS dataAxisToSRSAxisMapping="2,1,3">GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,3],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],AXIS["ellipsoidal height (h)",up,ORDER[3],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World (by country)"],BBOX[-90,-180,90,180]],ID["EPSG",4979]]</SRS>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Point</MDI>
+    <MDI key="TIFFTAG_COPYRIGHT">Derived from work by USA NGA</MDI>
+    <MDI key="TIFFTAG_IMAGEDESCRIPTION">WGS 84 (EPSG::4979) to EGM2008 height (EPSG::3855)</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <ColorInterp>Gray</ColorInterp>
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">10.008045196533</MDI>
+      <MDI key="STATISTICS_MEAN">-8.6340441043379</MDI>
+      <MDI key="STATISTICS_MINIMUM">-30.485261917114</MDI>
+      <MDI key="STATISTICS_STDDEV">11.118521658424</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">100</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
